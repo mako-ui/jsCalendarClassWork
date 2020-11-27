@@ -14,21 +14,23 @@
 }
 
 .container {
-    width: 800px;
-    height: 900px;
+    width: 1500px;
+    height: 1000px;
     border: 1px solid #777;
     margin: 1rem auto;
     background-image: url("../img/13.jpg");
     background-position: center;
     background-size: cover;
     display: grid;
-    grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas: 
-    "month1 month2 month3"
-    "month4 month5 month6"
-    "month7 month8 month9"
-    "month10 month11 month12";
+    "day1 day2 day3 day4"
+    "day5 day6 day7 day8"
+    "day9 day10 day11 day12"
+    "day13 day14 day15 day16"
+    "day17 day18 day19 day20"
+    "day21 day22 day23 day24";
 }
 
 .image {

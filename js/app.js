@@ -1,15 +1,15 @@
 const calendarButton = document.querySelector(".btn-start");
 const calendarContainer = document.querySelector(".container");
-const calendarMonth = 12;
+const calendarDays = 24;
 
 calendarButton.addEventListener("click", (event)=> {
     console.log("test");
-    for (let i = 0; i < calendarMonth; i++){
+    for (let i = 0; i < calendarDays; i++){
         const calendarDoor = document.createElement("div");
         const calendarDoorText = document.createElement("div");
         calendarDoor.classList.add("image");
         calendarDoorText.classList.add("text");
-        calendarDoor.style.gridArea = "month" + (i+1);
+        calendarDoor.style.gridArea = "day" + (i+1);
         calendarDoorText.innerHTML = i + 1;
 
         calendarDoor.appendChild(calendarDoorText);
